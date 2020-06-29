@@ -51,7 +51,6 @@ const inputs = document.querySelectorAll('.input');
 const form = document.getElementById('form');
 
 form.addEventListener('submit',function(e){
-    //e.preventDefault();
     const err = document.getElementById('err');
      inputs.forEach(input =>{
          if (input.value === '') {
