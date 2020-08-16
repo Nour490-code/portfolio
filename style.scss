@@ -190,6 +190,9 @@ header{
     a:hover img{
         transform: scale(1.08);
     }
+    .iss{
+        height: 28.8vh;
+    }
     .view{
         padding: 0.2rem 1rem;
         margin-left: 7rem;
@@ -302,6 +305,9 @@ footer{
         }
         .projects__cards{
             transform: translateX(8rem);
+        }
+        .iss{
+            height: 16.5vh;
         }
     }
     .hero{
@@ -451,6 +457,9 @@ footer{
             font-size: 1.76em;
         }
     }
+    .iss{
+        height: 15.7vh
+    }
 }
 
 @media(max-width: 977px){
@@ -468,6 +477,9 @@ footer{
         p{
             font-size: 0.83rem;
         }
+    }
+    .iss{
+        height: 15.7vh
     }
 }
 @media(max-width: 877px){
@@ -487,6 +499,9 @@ footer{
         .view-grid {
             margin-left: 2rem;
         }   
+        .iss{
+            height: 13.8vh
+        }
     }
   }
 
@@ -564,6 +579,9 @@ footer{
     }
     .projects .card2, .projects .card3 {
         width: 90%;
+    }
+    .projects .iss{
+        height: 23vh;
     }
     .projects .single-grid {
         width: 77%;
@@ -745,12 +763,15 @@ footer{
     }
     .projects .projects__cards {
         transform: translateX(7.5rem);
-    }
+    } 
     .contact-me .submit {
         margin-left: 6.3rem;
     }
 }
 @media(max-width: 575.98px){
+    .mg-left, .about-me h1, .projects h1 {
+        margin-left: 1.3rem;
+    }
     header h2 {
         font-size: 0.5em;
         margin: 1.2rem 0 0.2rem 0;
@@ -764,7 +785,7 @@ footer{
         margin-right: 1.5rem;
     }
     header nav a {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
     .cta {
         padding: 0.1rem 1rem;
