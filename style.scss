@@ -10,6 +10,10 @@ $light: 300;
     padding: 0;
     box-sizing: border-box;
 }
+.blogweb{
+    margin-left: 12rem;
+    width: 27%;
+}
 
 body{
     font-family: 'Cairo', sans-serif;
@@ -151,7 +155,7 @@ header{
     .projects__cards{
         display: flex;
         flex-direction: row;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
         margin-top: 5.5rem;
         transform: translateX(12rem);
         width: 80%;
@@ -193,6 +197,14 @@ header{
     .iss{
         height: 28.8vh;
     }
+    .blogweb{
+        margin-left: 12rem;
+        width: 27%;
+        margin-bottom: 10rem;
+    }
+    .view-blog{
+        margin-left: 2rem;
+    }
     .view{
         padding: 0.2rem 1rem;
         margin-left: 7rem;
@@ -204,6 +216,9 @@ header{
         padding: 0.2rem 1rem;
         background-color: #576CA8;
         transition: all .5s;
+    }
+    .view-blog{
+        margin-left: 7rem;
     }
     .view-grid:hover{
         background-color: rgba(87, 109, 168, 0.801);
@@ -308,6 +323,9 @@ footer{
         }
         .iss{
             height: 16.5vh;
+        }
+        .blogweb {
+            margin-left: 8rem;
         }
     }
     .hero{
@@ -500,7 +518,7 @@ footer{
             margin-left: 2rem;
         }   
         .iss{
-            height: 13.8vh
+            height: 18.5vh
         }
     }
   }
@@ -614,6 +632,10 @@ footer{
     footer .icons {
         transform: translate(41rem, -0.4rem);
     }
+    .projects .blogweb {
+        margin-left: 12rem;
+        width: 45%;
+    }
   }
 
   @media(max-width: 774px){
@@ -652,6 +674,9 @@ footer{
     .projects .view , .projects .view-grid {
         margin-left: 5.5rem;
     }
+    .projects .blogweb {
+        width: 52%;
+    }
     .about-me p {
         width: 85%;
         margin-bottom: 8rem;
@@ -685,6 +710,9 @@ footer{
     }
     .projects .projects__cards {
         transform: translateX(10rem);
+    }
+    .projects .blogweb { 
+        margin-left: 10rem;
     }
 }
 
@@ -811,6 +839,10 @@ footer{
     }
     .projects .view, .projects .view-grid {
         margin-left: 4rem;
+    }
+    .projects .blogweb {
+        margin-left: 2.5rem;
+        width: 77%;
     }
     .about-me p {
         font-size: 0.7em;
