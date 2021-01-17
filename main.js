@@ -40,6 +40,28 @@ function run (){
     const waitTime = element.getAttribute('data-wait');
     new TypeEffect(element,sentences,waitTime);
 }
+//Hamburger Menu
+const menuBtn = document.querySelector('.menu-btn');
+const menuNav = document.querySelector('.nav-menu');
+const menuItem = document.querySelectorAll('.nav-menu li a');
+
+//toggle
+menuBtn.addEventListener('click', () =>{
+    toggle();
+});
+menuItem.forEach(item => {
+    item.addEventListener('click',() => {
+        if(menuBtn.classList.contains('open')){
+            toggle();
+        }
+    });
+});
+
+function toggle (){
+    menuBtn.classList.toggle("open");
+    menuNav.classList.toggle("open");
+}
+
 //Smooth Scroll
 const scroll = new SmoothScroll('a[href*="#"]',{
     speed: 800
