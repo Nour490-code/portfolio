@@ -596,6 +596,10 @@ footer{
   }
 
   @media(max-width: 775px){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     header h2 {
         font-size: 1.45em;
     }
@@ -624,7 +628,7 @@ footer{
     .nav-menu li,
     .nav-menu a{
         margin: 2rem 0 0 0 ;
-        font-size: 1.35em;
+        font-size: 1.1em;
     }
 
     .hero {
