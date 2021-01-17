@@ -1,4 +1,5 @@
 $primary: #06D6A0;
+$menu: #06d69ec2;
 $secondary: #FCA311;
 $color-type: #00171F;
 $semi-bold: 600;
@@ -51,10 +52,55 @@ header{
         text-transform: uppercase;
         transform: translateY(-6px);
         font-size: 1.8em;
+        z-index: 1;
     }
     nav{
         margin-right: 2.5rem;
     }
+
+    .menu-btn{
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu-btn__lines,
+    .menu-btn__lines::before,
+    .menu-btn__lines::after {
+        width: 1.5rem;
+        height: 0.1rem;
+        background-color: $color-type;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__lines::before,
+    .menu-btn__lines::after{
+        content: '';
+        position: absolute;
+    }
+    .menu-btn__lines::before{
+        transform: translateY(-0.4rem);
+    }
+    .menu-btn__lines::after{
+        transform: translateY(0.4rem);
+    }
+
+    .menu-btn.open .menu-btn__lines{
+        transform: translateX(2rem);
+        background-color: transparent;
+    }
+    .menu-btn.open .menu-btn__lines::before{
+        transform: rotate(45deg) translate(-1.5rem,1.5rem);
+        background-color: #ffffff;
+    }
+    .menu-btn.open .menu-btn__lines::after{
+        transform: rotate(-45deg) translate(-1.5rem,-1.5rem);
+        background-color: #ffffff;
+    }
+
     ul{
         display: flex;
         flex-direction: row;
@@ -375,9 +421,6 @@ footer{
 }
 @media(max-width:1002px){
     header{
-        a{
-            font-size: 0.91em;
-        }
         h2{
             font-size: 1.71em;
         }
@@ -557,11 +600,33 @@ footer{
         font-size: 1.45em;
     }
     header nav {
-        margin-right: 0rem;
+        margin: 1rem 2rem 0rem 0rem;
     }
-    header a {
-        font-size: 0.9em;
+    nav .menu-btn{
+        display: block;
     }
+    .nav-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(100vw);
+        background-color: $menu;
+        transition: transform 0.3s ease-in-out;
+    }
+    .nav-menu.open{
+        transform: translateX(0);
+    }
+    .nav-menu li,
+    .nav-menu a{
+        margin: 2rem 0 0 0 ;
+        font-size: 1.35em;
+    }
+
     .hero {
         flex-direction: column;
         margin-bottom: -12rem;
@@ -659,9 +724,6 @@ footer{
     .mg-left,.about-me h1 {
         margin-left: 3rem;
       }
-    header a {
-        font-size: 0.86em;
-    }
     .hero {
         margin-bottom: -5.4rem;
     }
@@ -696,9 +758,6 @@ footer{
     .mg-left,.about-me h1 {
         margin-left: 2.5rem;
       }
-    header a {
-        font-size: 0.8em;
-    }
     header h2 {
         font-size: 1.3em;
     }
@@ -806,14 +865,10 @@ footer{
         transform: translateY(-7px);
     }
     header nav {
-        transform: translateY(-1.5px);
         margin-right: 0.01rem;
     }
     header li {
         margin-right: 1.5rem;
-    }
-    header nav a {
-        font-size: 0.6em;
     }
     .cta {
         padding: 0.1rem 1rem;
