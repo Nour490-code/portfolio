@@ -625,6 +625,9 @@ footer{
     .nav-menu.open{
         transform: translateX(0);
     }
+    .ovreflow-y{
+        overflow-y: hidden;
+    }
     .nav-menu li,
     .nav-menu a{
         margin: 2rem 0 0 0 ;
@@ -791,6 +794,10 @@ footer{
         a{
         font-size: 0.77em;
         }
+        
+    .menu-btn {
+        margin-right: 1.5rem;
+    }
     }
     .hero .hero__text h1 {
         font-size: 1.8em;
@@ -864,7 +871,6 @@ footer{
         margin-left: 1.3rem;
     }
     header h2 {
-        font-size: 0.5em;
         margin: 1.2rem 0 0.2rem 0;
         transform: translateY(-7px);
     }
