@@ -60,6 +60,7 @@ menuItem.forEach(item => {
 function toggle (){
     menuBtn.classList.toggle("open");
     menuNav.classList.toggle("open");
+    document.documentElement.classList.toggle('ovreflow-y');
 }
 
 //Smooth Scroll
