@@ -1,7 +1,7 @@
-$primary: #06D6A0;
-$menu: #06d69ec2;
-$secondary: #FCA311;
-$color-type: #00171F;
+$primary: #685CB6;
+$menu: #685cb6bd;
+$secondary: #47E06D;
+$color-type: #ffffff;
 $semi-bold: 600;
 $regular: 400;
 $light: 300;
@@ -133,29 +133,32 @@ header{
 .hero{
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(45deg, rgba(255,255,255,1) 28%, rgba(228,228,228,0.5) 77%);
+    background: rgb(38,32,78);
+    background: linear-gradient(180deg, rgba(38,32,78,1) 0%, rgba(82,68,174,1) 35%, rgba(184,173,255,1) 100%);
     margin-bottom: -5.3rem;
     .hero__text{
         margin-top: 8rem;
         h1{
             font-size: 2.4em;
+            color: #00171F;
         }
         h6{
             margin-left: 6rem;
             font-size: 0.78em;
             font-weight: $regular;
+            color: #00171F;
         }
         p{
             margin: 1.3rem 0 2.5rem 0;
-            font-size: 1.1rem;
+            font-size: 1.13rem;
             width: 87%;
             font-weight: $light;
         }
         span{
-            color: $secondary;
+            color: #ffffff;
         }
         .text > .txt{
-            border-right: 0.15rem solid $secondary;
+            border-right: 0.15rem solid #ffffff;
         }
     }
     .dev-illust{
@@ -163,9 +166,9 @@ header{
         transform: translate(3.5rem,-9rem);
     }
     .cta2{
-        border: 1.5px solid #FCA311;
+        border: 1.5px solid #47E06D;
         padding: 0.2rem 1.7rem;
-        color: #00171F;
+        color: #ffffff;
         border-radius: 4px; 
         margin-left: 2rem;
         position: relative;
@@ -196,7 +199,8 @@ header{
     }
 }
 .projects{
-    background-color: rgba(228, 228, 228, 0.15);
+    background: rgb(184,173,255);
+    background: linear-gradient(180deg, rgba(184,173,255,1) 0%, rgba(109,99,168,1) 100%);
     margin-top: 5.3rem;
     .projects__cards{
         display: flex;
@@ -209,6 +213,7 @@ header{
     h1{
         font-size: 2em;
         margin: 3.5rem 0 0 5.5rem;
+        color:#00171F;
     }
     .projects__cardi{
         width: 100%;
@@ -227,8 +232,8 @@ header{
         width: 70%;
     }
     img{
-        border: 2.5px solid rgba(252, 162, 17, 0.65);
-        border-radius: 5px;
+        border: 2.5px solid $secondary;
+        border-radius: 8px;
         transition: all .4s;
     }
     .easy-bank{
@@ -275,10 +280,12 @@ header{
 }
 
 .about-me{
-    background-image: linear-gradient(45deg, rgba(255,255,255,1) 28%, rgba(228,228,228,0.5) 77%);
+    background: rgb(111,101,170);
+    background: linear-gradient(180deg, rgba(111,101,170,1) 0%, rgba(92,80,161,1) 26%, rgba(48,42,86,1) 100%);
     h1{
         font-size: 2em;
         margin: 3.5rem 0 3rem 5.5rem;
+        color: #D0C9FF;
     }
     p{
         margin-bottom: 12rem;
@@ -289,7 +296,8 @@ header{
 .contact-me{
     display: flex;
     flex-direction: row;
-    background-color: rgba(228, 228, 228, 0.15);
+    background: rgb(54,48,91);
+    background: linear-gradient(180deg, rgba(54,48,91,1) 0%, rgba(43,36,83,1) 26%, rgba(14,10,41,0.9) 100%);
     height: 100vh;
     .contact__txt{
         width: 23%;
@@ -297,6 +305,7 @@ header{
     h1{
         font-size: 2em;
         margin: 3.5rem 0 0 0;
+        color: #D0C9FF;
     }
     h3{
         margin-bottom: 2rem;
@@ -305,8 +314,7 @@ header{
         font-size: 0.9em;
     }
     img{
-        transform: translate(17rem,-6rem);
-        width: 50%;
+        width: 60%;
     }
     form{
         display: flex;
@@ -377,7 +385,7 @@ footer{
     .hero{
         .dev-illust {
             width: 53%;
-            transform: translate(3.5rem, -0rem);
+            transform: translate(0);
         }
         
          .hero__text h1 {
@@ -395,7 +403,7 @@ footer{
     }
     .contact-me{
         img {
-            transform: translate(10rem, -6rem);
+            transform: translate(0rem, 3rem);
         }
         .submit {
             margin-left: 3.5rem;
@@ -409,7 +417,7 @@ footer{
     }
     footer{
         .icons {
-            transform: translate(56rem, -0.2rem);
+            margin-left: 55rem;
         }
         img{
             margin: 0 1rem 0 0 ;
@@ -433,8 +441,8 @@ footer{
             font-size: 0.8em;
         }
         .dev-illust {
-            width: 54.5%;
-            transform: translate(2.5rem, -3rem);
+            width: 50%;
+            transform: translate(0rem, 0rem);
         }
     }
     .projects h1 {
@@ -442,6 +450,11 @@ footer{
     }
     .about-me p {
         font-size: 0.95em;
+    }
+    .contact-me{
+        img{
+            width: 55%;
+        }
     }
 }
 
@@ -575,7 +588,7 @@ footer{
     }
     .hero .dev-illust {
         width: 55.5%;
-        transform: translate(2.5rem, 0rem);
+        transform: translate(0rem, 0rem);
     }
     .projects .view-grid {
         margin-left: 1.5rem;
@@ -584,14 +597,13 @@ footer{
         font-size: 0.85em;
     }
     .contact-me img {
-        transform: translate(7rem, -6rem);
         width: 55%;
     }
     .contact-me .contact__txt {
         width: 27%;
     }
     footer .icons {
-        transform: translate(45rem, -0.2rem);
+        margin-left: 45rem;
     }
   }
 
@@ -692,17 +704,19 @@ footer{
     }
     .contact-me .submit {
         margin-left: 11rem;
+        margin-bottom: 5rem;
         width: 45%;
         padding: 0.8rem 1.5rem;
     }
     .contact-me img {
         transform: translate(7rem, -8rem);
         width: 70%;
-        margin-bottom: -9rem;
+        margin-bottom: -8rem;
         z-index: -1;
+        display: none;
     }
     footer .icons {
-        transform: translate(41rem, -0.4rem);
+        margin-left: 40rem;
     }
     .projects .blogweb {
         margin-left: 12rem;
@@ -738,6 +752,7 @@ footer{
         z-index: 1;
     }
     footer .icons {
+        margin-left: 0;
         transform: translate(33rem, -0.4rem);
     }
     .projects .view , .projects .view-grid {
@@ -756,9 +771,7 @@ footer{
     .contact-me .submit {
         margin-left: 8.5rem;
     }
-    .projects .projects__cards {
-        width: 57%;
-    }
+
   }
 
   @media(max-width: 614px){
